@@ -82,7 +82,8 @@ M.moon = function()
     red1 = "#c53b53", --
   }
   -- ret.comment = util.blend(ret.comment, ret.bg, "bb")
-  ret.comment = util.blend(ret.comment, ret.bg, "c8") -- make brighter comments
+  -- ret.comment = util.blend(ret.comment, ret.bg, "c8") -- make brighter comments
+  ret.comment = util.blend(ret.fg, ret.bg, "c8") -- make brighter comments
   ret.git = {
     change = util.blend(ret.blue, ret.bg, "ee"),
     add = util.blend(ret.green, ret.bg, "ee"),
